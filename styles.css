@@ -9,6 +9,8 @@ body[data-view="home"] #pub>section>footer{margin-top:auto}
 .btn-alert{background:var(--orange);color:#fff}.btn-alert:hover{background:#d97a1c;color:#fff}
 .tricolor{height:4px;background:linear-gradient(90deg,#FF9933 33%,#fff 33% 66%,#138808 66%)}
 .emblem{width:42px;height:42px;border:2px dashed #fff8;border-radius:50%;display:grid;place-items:center;font-size:.6rem;color:#fffc;flex:none}
+.gov-logo{width:60px;height:60px;object-fit:contain;border-radius:50%;flex:none}
+#pubhead .portal-name{font-size:1.2rem}
 .card{border:0;border-radius:12px;box-shadow:0 1px 3px rgba(23,54,93,.08)}
 .sidebar{width:250px;background:var(--navy)!important;color:#fff;flex:none}
 .sidebar .border-secondary{border-color:#ffffff26!important}
