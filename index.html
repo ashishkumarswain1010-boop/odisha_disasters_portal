@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Odisha Disaster Management &amp; Relief Portal</title>
+</head>
+<body data-view="home" data-title="Odisha Disaster Management &amp; Relief Portal">
+<div class="tricolor"></div>
+<!-- PUBLIC HEADER -->
+<header id="pubhead" class="bg-navy text-white">
+ <div class="container py-2 d-flex align-items-center gap-3">
+  <div class="emblem">GoO</div>
+  <div class="me-auto"><div class="fw-semibold">Odisha Disaster Management &amp; Relief Portal</div><small class="opacity-75">Government of Odisha</small></div>
+  <nav class="d-none d-md-flex gap-3 small"><a class="text-white text-decoration-none" href="index.html">Home</a><a class="text-white text-decoration-none" href="disasters.html">Active disasters</a><a class="text-white text-decoration-none" href="relief.html">Relief</a><a class="text-white text-decoration-none" href="organisations.html">Partners</a></nav>
+  <a href="login.html" class="btn btn-alert btn-sm"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+ </div>
+</header>
+<div id="shell" class="d-none"></div>
+<div id="pub">
+<section data-view="home">
+ <div class="hero py-5"><div class="container py-lg-4">
+  <div class="row align-items-center g-4"><div class="col-lg-7">
+   <h1 class="fw-bold">Report a disaster. Register for relief. Track every rupee.</h1>
+   <p class="lead opacity-75">One portal for Odisha, connecting State and district administration with every Gram Panchayat and affected household.</p>
+   <a href="register.html" class="btn btn-alert btn-lg me-2 mb-2">Register as affected person</a><a href="register.html" class="btn btn-outline-light btn-lg mb-2">Report a disaster</a></div>
+   <div class="col-lg-5"><div class="row g-2 text-center">
+    <div class="col-6"><div class="bg-white bg-opacity-10 rounded-3 p-3"><div class="fs-3 fw-bold">2</div><small>Active Odisha disasters</small></div></div>
+    <div class="col-6"><div class="bg-white bg-opacity-10 rounded-3 p-3"><div class="fs-3 fw-bold">10</div><small>Sample registered families</small></div></div>
+    <div class="col-6"><div class="bg-white bg-opacity-10 rounded-3 p-3"><div class="fs-3 fw-bold">₹8.3 Cr</div><small>Sample relief distributed</small></div></div>
+    <div class="col-6"><div class="bg-white bg-opacity-10 rounded-3 p-3"><div class="fs-3 fw-bold">7</div><small>Sample NGO &amp; CSR partners</small></div></div></div>
+    </div></div></div></div>
+ <div class="container py-4">
+  <h4 class="text-navy mb-3">Active disasters</h4>
+  <div class="row g-3" id="activeCards"></div>
+  <div class="row g-3 mt-2">
+   <div class="col-md-4"><div class="card h-100 p-3"><i class="bi bi-house-heart fs-3 text-primary"></i><h6 class="mt-2">Relief and assistance</h6><p class="small text-muted mb-0">Food, drinking water, shelter, medical aid and financial assistance after verification at GP, Block and District.</p></div></div>
+   <div class="col-md-4"><div class="card h-100 p-3"><i class="bi bi-building fs-3 text-primary"></i><h6 class="mt-2">Companies and NGOs</h6><p class="small text-muted mb-0">Register your organisation, commit contributions and download utilisation statements.</p></div></div>
+   <div class="col-md-4"><div class="card h-100 p-3"><i class="bi bi-shield-check fs-3 text-primary"></i><h6 class="mt-2">Be prepared</h6><p class="small text-muted mb-0">Keep a go-bag, know your nearest relief camp and save the helpline numbers.</p></div></div></div>
+ </div>
+ <footer class="bg-navy text-white py-4 small"><div class="container d-flex flex-wrap justify-content-between gap-2"><span>© Government of Odisha · Helpline 1070</span></div></footer>
+</section>
+</div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:2000"><div id="tst" class="toast text-bg-dark"><div class="toast-body" id="tmsg"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables.net@1.13.8/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables.net-bs5@1.13.8/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
